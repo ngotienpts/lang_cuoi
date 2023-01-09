@@ -23,3 +23,44 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.footer {
+  & .infowrap {
+    background: #313133;
+    padding: 19px 0 0 0;
+    color: #fff;
+
+    & .footer-info {
+      display: flex;
+
+      & ul {
+        width: 50%;
+        padding-left: 40px;
+        list-style: disc;
+        font-size: 12px;
+        line-height: 23.4px;
+      }
+
+      & li {
+        padding: 4px;
+      }
+    }
+  }
+
+  & .copywrap {
+    background: #444;
+
+    & .copyright {
+      height: 83px;
+      line-height: 83px;
+    }
+    & .f-social {
+      display: flex;
+
+      & a {
+        padding: 0 11px;
+        color: #999;
+        font-size: 16px;
+      }
+    }
+  }
+}
