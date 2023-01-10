@@ -34,7 +34,58 @@
     display: grid;
   }
 
-  /*-------------------------------------------------------------*/
+  /*-------------------------------------------------------------detail*/
+  .wrapper-detail {
+    margin-top: 56px;
+    padding: 20px;
+    border: none;
+    font-family: "Hind", sans-serif;
+  }
+  .wrapper-detail .block-left {
+    border-right: none;
+  }
+
+  .detail-field {
+    font-family: "Hind", sans-serif;
+    padding: 0;
+  }
+  .detail-field .cate-header {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .detail-field .detail-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .detail-field .detail-info {
+    margin: 0 0 20px;
+  }
+  .detail-field .detail-sapo {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .detail-field .detail-content p {
+    font-size: 20px;
+    margin-bottom: 24px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .detail-field .detail-content .author {
+    color: #333;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .detail-field .detail-tags .tag-link {
+    color: #0000ff;
+  }
+  .detail-field .detail-tags .detail-tags__item {
+    margin: 0 5px 20px 0;
+  }
 }
 @media (max-width: 48em) {
   .d-md-none {
