@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var headerExtend = headerMb.querySelector(".header-mb__extend");
         var overlay = headerMb.querySelector(".slide-overlay");
         headerBar.onclick = function () {
-          if (headerBar.matches(".active") && this.matches(".active")) {
+          if (headerMb.matches(".active") && this.matches(".active")) {
             headerMb.classList.remove("active");
             this.classList.remove("active");
           } else {
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         headerExtend.onclick = function () {
-          if (headerBar.matches(".active") && this.matches(".active")) {
+          if (headerMb.matches(".active") && this.matches(".active")) {
             headerMb.classList.remove("active");
             this.classList.remove("active");
           } else {
