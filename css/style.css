@@ -195,7 +195,6 @@ img {
 }
 
 /*===========================================================================*/
-/*===========================================================================*/
 .w-30 {
   width: 30%;
 }
@@ -215,6 +214,11 @@ img {
 
 .w-100 {
   width: 100%;
+}
+
+/*===========================================================================*/
+.font-primary {
+  font-family: "Hind", sans-serif;
 }
 
 /*===========================================================================*/
@@ -393,6 +397,18 @@ img {
   color: #333;
 }
 
+.text-gray-44 {
+  color: #444;
+}
+
+.text-gray-99 {
+  color: #999;
+}
+
+.text-gray-bb {
+  color: #bbb;
+}
+
 .text-red-d9 {
   color: #d90000;
 }
@@ -408,6 +424,10 @@ img {
 /*=================================================================*/
 .bg-white {
   background-color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
 }
 
 .bg-gray-ee {
@@ -1014,6 +1034,122 @@ img {
   color: #333;
 }
 
+/*-----------------------------------------------------------mobile*/
+.header-mb {
+  height: 56px;
+  border-bottom: 2px solid #c90202;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.header-mb.active .slide-overlay {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+}
+.header-mb .header-mb__logo img {
+  height: 50px;
+  width: auto;
+}
+.header-mb .header-mb__bar.active .sub-bar {
+  left: 0;
+}
+.header-mb .header-mb__extend.active .sub-extend {
+  right: 0;
+}
+.header-mb .sub-bar, .header-mb .sub-extend {
+  position: fixed;
+  width: 240px;
+  top: 0;
+  height: 100vh;
+  margin: 0;
+  padding-bottom: 60px;
+  z-index: 9999;
+  overflow-y: auto;
+  background: #000;
+  color: #999;
+  transition: all 0.2s linear;
+}
+.header-mb .sub-bar {
+  left: -240px;
+}
+.header-mb .sub-extend {
+  right: -240px;
+}
+.header-mb .sub-extend .sub-extend__heading {
+  font-weight: 700;
+  display: block;
+  width: 110px;
+  text-align: center;
+  border-bottom: 2px solid #c90202;
+  line-height: 48px;
+  color: #fff;
+  font-size: 15px;
+}
+.header-mb .sub-extend .article-item {
+  display: flex;
+  padding: 13px 10px;
+  border-bottom: 1px solid #222;
+}
+.header-mb .sub-extend .article-img {
+  width: 30%;
+}
+.header-mb .sub-extend .article-title {
+  font-size: 14px;
+  color: #fff;
+}
+.header-mb .search-box {
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}
+.header-mb .search-form {
+  padding: 3px 10px;
+  background: #fff;
+  border-radius: 5px;
+  color: #fff;
+  width: 100%;
+  position: relative;
+}
+.header-mb input[type=text] {
+  height: auto;
+  margin: 0;
+  border: none;
+  padding: 5px 0 0 20px;
+  font-size: 15px;
+}
+.header-mb .search-btn {
+  color: #999;
+  display: inline-block;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: auto;
+  padding: 0;
+  transform: translateY(-50%);
+}
+.header-mb .sub-bar__item {
+  padding: 10px 20px;
+}
+
+.slide-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  will-change: opacity;
+}
+
 .box-top {
   height: 42px;
 }
@@ -1151,6 +1287,52 @@ img {
   margin-top: 40px;
 }
 
+/*----------------------------------------------------------------mobile*/
+.main-mb {
+  margin-top: 56px;
+}
+
+.box-top-mb {
+  position: relative;
+  overflow: hidden;
+}
+.box-top-mb .articles-content {
+  left: 0;
+  bottom: 0;
+  padding: 20px 15px;
+  z-index: 12;
+}
+.box-top-mb .article-title {
+  margin-bottom: 4px;
+}
+.box-top-mb .swiper-pagination-bullet {
+  background: #999;
+}
+.box-top-mb .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.article-box .article-header {
+  height: 36px;
+  border-bottom: 1px solid #999;
+}
+.article-box .article-header a {
+  border-bottom: 1px solid #c90202;
+  display: inline-block;
+  padding: 3px 0;
+}
+.article-box .article-list .article-item {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.article-box .article-list .article-img {
+  width: 30%;
+}
+.article-box .article-list .article-title {
+  margin-bottom: 5px;
+}
+
 #back-top {
   position: fixed;
   right: 1rem;
@@ -1209,6 +1391,14 @@ img {
   padding: 0 11px;
   color: #999;
   font-size: 16px;
+}
+
+/*------------------------------------------------mobile*/
+.footer-mb {
+  padding: 20px 30px;
+}
+.footer-mb p {
+  padding: 3px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

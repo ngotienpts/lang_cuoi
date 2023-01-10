@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // fancybox
   var fancyboxes = document.querySelectorAll(".fancybox-full");
 
+  // header mb
+  var headerMb = document.querySelector(".header-mb");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -20,7 +23,41 @@ document.addEventListener("DOMContentLoaded", function () {
           document.documentElement.scrollTop = 0;
         };
       }
+      // header mb
+      if (headerMb) {
+        var headerBar = headerMb.querySelector(".header-mb__bar");
+        var headerExtend = headerMb.querySelector(".header-mb__extend");
+        var overlay = headerMb.querySelector(".slide-overlay");
+        headerBar.onclick = function () {
+          if (headerBar.matches(".active") && this.matches(".active")) {
+            headerMb.classList.remove("active");
+            this.classList.remove("active");
+          } else {
+            headerMb.classList.add("active");
+            this.classList.add("active");
+          }
+        };
 
+        headerExtend.onclick = function () {
+          if (headerBar.matches(".active") && this.matches(".active")) {
+            headerMb.classList.remove("active");
+            this.classList.remove("active");
+          } else {
+            headerMb.classList.add("active");
+            this.classList.add("active");
+          }
+        };
+        overlay.onclick = function () {
+          if (headerMb.matches(".active") && headerBar.matches(".active")) {
+            headerMb.classList.remove("active");
+            headerBar.classList.remove("active");
+          }
+          if (headerMb.matches(".active") && headerExtend.matches(".active")) {
+            headerMb.classList.remove("active");
+            headerExtend.classList.remove("active");
+          }
+        };
+      }
       // hide cac element khi click ra ngoai
       // document.addEventListener("click", function (e) {});
     },
@@ -32,6 +69,14 @@ document.addEventListener("DOMContentLoaded", function () {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+    },
+    // slide box top mb
+    slideBoxTopMb: function () {
+      var swiper = new Swiper(".mySwiperBoxTopMb", {
+        pagination: {
+          el: ".swiper-pagination",
         },
       });
     },
@@ -80,6 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.windowScroll();
       // slide box top
       this.slideBoxTop();
+      // slide box top mb
+      this.slideBoxTopMb();
       // sticky bar home 1
       this.stickyHome1();
       // fancybox

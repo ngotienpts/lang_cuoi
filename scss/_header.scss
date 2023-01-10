@@ -48,3 +48,129 @@
     color: #333;
   }
 }
+/*-----------------------------------------------------------mobile*/
+.header-mb {
+  height: 56px;
+  border-bottom: 2px solid #c90202;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  &.active {
+    & .slide-overlay {
+      visibility: visible;
+      opacity: 1;
+      z-index: 1000;
+    }
+  }
+  & .header-mb__logo img {
+    height: 50px;
+    width: auto;
+  }
+  & .header-mb__bar {
+    &.active .sub-bar {
+      left: 0;
+    }
+  }
+  & .header-mb__extend {
+    &.active .sub-extend {
+      right: 0;
+    }
+  }
+  & .sub-bar,
+  & .sub-extend {
+    position: fixed;
+    width: 240px;
+    top: 0;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 60px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #000;
+    color: #999;
+    transition: all 0.2s linear;
+  }
+  & .sub-bar {
+    left: -240px;
+  }
+  & .sub-extend {
+    right: -240px;
+    & .sub-extend__heading {
+      font-weight: 700;
+      display: block;
+      width: 110px;
+      text-align: center;
+      border-bottom: 2px solid #c90202;
+      line-height: 48px;
+      color: #fff;
+      font-size: 15px;
+    }
+    & .article-item {
+      display: flex;
+      padding: 13px 10px;
+      border-bottom: 1px solid #222;
+    }
+    & .article-img {
+      width: 30%;
+    }
+
+    & .article-title {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  & .search-box {
+    padding: 15px 10px;
+    margin-bottom: 20px;
+  }
+
+  & .search-form {
+    padding: 3px 10px;
+    background: #fff;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    position: relative;
+  }
+  & input[type="text"] {
+    height: auto;
+    margin: 0;
+    border: none;
+    padding: 5px 0 0 20px;
+    font-size: 15px;
+  }
+
+  & .search-btn {
+    color: #999;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: auto;
+    padding: 0;
+    transform: translateY(-50%);
+  }
+
+  & .sub-bar__item {
+    padding: 10px 20px;
+  }
+}
+.slide-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  will-change: opacity;
+}
