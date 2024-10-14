@@ -1,5 +1,12 @@
 .detail-field {
   padding: 17px 25px 60px 0;
+
+  .detail-info {
+    .icon {
+      width: 24px;
+      height: auto;
+    }
+  }
   & .detail-content {
     & p {
       font-size: 14px;
@@ -72,7 +79,10 @@
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
     }
-
+    .icon {
+      width: 10px;
+      height: auto;
+    }
     & .detail-twiiter {
       background-color: #48b4e4;
     }

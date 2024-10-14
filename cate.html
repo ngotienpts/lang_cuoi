@@ -28,13 +28,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./lib/slick/slick-1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./lib/font-awesome/fontawesome-free-5.15.4-web/css/all.min.css" />
-  <link rel="stylesheet" href="./lib/fancybox/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/responsive.css" />
-  <script src="./lib/jquery/jquery.js"></script>
+  <!-- <script src="./lib/jquery/jquery.js"></script> -->
 </head>
 
 <body>
@@ -45,30 +41,35 @@
   <div class="d-2xl-none d-lg-block">
     <div class="header-mb d-2xl-flex align-items-center justify-content-between px-15 bg-black text-gray-99">
       <div class="header-mb__bar fs-20">
-        <i class="fas fa-bars"></i>
+        <img src="./images/svg/bars-gray.svg" alt="" class="icon">
         <!-- sub menu -->
         <div class="sub-bar">
           <!-- search -->
           <div class="search-box">
             <div class="search-form">
               <input type="text" name="search" class="search-input" placeholder="Tìm kiếm" autocomplete="off">
-              <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+              <button type="button" class="search-btn">
+                <img src="./images/svg/search-gray.svg" alt="">
+              </button>
             </div>
           </div>
           <ul class="sub-bar__list fs-15">
             <li class="sub-bar__item">
               <a href="#" title="">
-                <i class="fas fa-chevron-right mr-20 fs-12"></i>Thông Tấn Thôn
+                <img src="./images/svg/next-gray.svg" alt="" class="mr-20 icon">
+                Thông Tấn Thôn
               </a>
             </li>
             <li class="sub-bar__item">
               <a href="#" title="">
-                <i class="fas fa-chevron-right mr-20 fs-12"></i>Thông Tấn Thôn
+                <img src="./images/svg/next-gray.svg" alt="" class="mr-20 icon">
+                Thông Tấn Thôn
               </a>
             </li>
             <li class="sub-bar__item">
               <a href="#" title="">
-                <i class="fas fa-chevron-right mr-20 fs-12"></i>Thông Tấn Thôn
+                <img src="./images/svg/next-gray.svg" alt="" class="mr-20 icon">
+                Thông Tấn Thôn
               </a>
             </li>
           </ul>
@@ -80,7 +81,7 @@
         <a href="#"><img src="./images/logo_mb.png" alt=""></a>
       </div>
       <div class="header-mb__extend fs-20">
-        <i class="fas fa-th-large"></i>
+        <img src="./images/svg/extend-gray.svg" alt="" class="icon">
         <!-- sub extend -->
         <div class="sub-extend">
           <h3 class="sub-extend__heading">Bài đọc nhiều</h3>
@@ -161,7 +162,7 @@
     <!-- navbar -->
     <div class="navbar wrapper-primary w-1220 d-2xl-flex align-items-center justify-content-between">
       <!-- list -->
-      <ul class="navbar-list d-2xl-flex align-items-center">
+      <ul class="navbar-list d-2xl-flex align-items-center active">
         <li class="navbar-item text-uppercase fs-13 fw-600 text-white lh-60">
           <a href="#">Trang chủ</a>
         </li>
@@ -180,7 +181,9 @@
       <!-- search -->
       <div class="search-form position-relative">
         <input type="text" name="search" id="search" placeholder="Tìm kiếm..." autocomplete="off">
-        <button type="button" class="search-btn btn position-absolute"><i class="fas fa-search"></i></button>
+        <button type="button" class="search-btn btn position-absolute">
+          <img src="./images/svg/search-b.svg" alt="">
+        </button>
       </div>
       <!-- end search -->
     </div>
@@ -188,6 +191,7 @@
 
   </header>
   <!-- end header pc-->
+
   <!-- main -->
   <main id="main" class="">
     <!-- pc -->
@@ -329,7 +333,7 @@
           <!-- header -->
           <div class="article-header mb-10 d-2xl-flex align-items-center justify-content-between">
             <h2 class="article-heading fs-20 text-blue-00 fw-700"><a href="#">Thông tấn thôn</a></h2>
-            <i class="fas fa-list text-gray-99 fs-16"></i>
+            <img src="./images/svg/list-gray.svg" alt="" class="icon">
           </div>
           <!-- end header -->
           <!-- list -->
@@ -400,6 +404,7 @@
     <!-- end mb -->
   </main>
   <!-- end main -->
+   
   <!-- footer -->
   <footer id="footer" class="footer w-1220">
     <!-- pc -->
@@ -408,7 +413,7 @@
       <div class="wrapper-primary infowrap">
         <div class="footer-info">
           <ul>
-            <li class="item"><strong>Trụ sở: </strong>13 Đường Thụy Khuê, Quận Tây Hồ, Hà Nội</li>
+            <li class="item"><strong>Trụ sở: </strong>Lô E2, Khu đô thị mới Cầu Giấy, đường Dương Đình Nghệ, Yên Hòa, Cầu Giấy, Hà Nội.</li>
             <li class="item"><strong>Tòa soạn và trị sự: </strong>Lô E2, Dương Đình Nghệ, Quận Cầu Giấy, Hà Nội</li>
             <li class="item"><strong>Email: </strong>
               <a href="mailto:toasoanlangcuoi@gmail.com" rel="nofollow" title="liên hệ">toasoanlangcuoi@gmail.com</a>
@@ -417,8 +422,8 @@
             <li class="item"><strong>Fanpage: </strong>F/BaoLangCuoi</li>
           </ul>
           <ul>
-            <li class="item"><strong>Tổng Biên tập: </strong>Lưu Quang Định</li>
-            <li class="item"><strong>Phó Tổng Biên tập: </strong>Phan Huy Hà (Thường trực), Lưu Phan, Nguyễn Văn Hoài
+            <li class="item"><strong>Tổng Biên tập: </strong>Nguyễn Văn Hoài</li>
+            <li class="item"><strong>Phó Tổng Biên tập: </strong>Phan Huy Hà (Thường trực), Lưu Phan
             </li>
             <li class="item"><span>Bản quyền thuộc về Báo điện tử Dân Việt</span><span>Báo điện tử của Trung ương Hội
                 Nông
@@ -432,9 +437,10 @@
       <div class="wrapper-primary copywrap">
         <div class="copyright">
           <div class="f-social">
-            <a class="rss" href="/danh-muc.rss" title="rss"><i class="fas fa-rss"></i></a>
-            <a class="fb" href="https://www.facebook.com/BaoLangCuoi/" title="facebook" target="_blank"><i
-                class="fab fa-facebook-f"></i></a>
+            <a class="rss" href="/danh-muc.rss" title="rss"><img src="./images/svg/rss-gray.svg" alt="" class="icon"></a>
+            <a class="fb" href="https://www.facebook.com/BaoLangCuoi/" title="facebook" target="_blank">
+              <img src="./images/svg/facebook-gray.svg" alt="" class="icon">
+            </a>
           </div>
         </div>
       </div>
@@ -444,10 +450,10 @@
     <!-- mb -->
     <div class="d-2xl-none d-lg-block">
       <div class="footer-mb text-gray-99 fs-12 bg-black font-primary">
-        <p><strong>Trụ sở: </strong>13 Đường Thụy Khuê, Quận Tây Hồ, Hà Nội</p>
+        <p><strong>Trụ sở: </strong>Lô E2, Khu đô thị mới Cầu Giấy, đường Dương Đình Nghệ, Yên Hòa, Cầu Giấy, Hà Nội.</p>
         <p><strong>Tòa soạn và trị sự: </strong>Lô E2, Dương Đình Nghệ, Quận Cầu Giấy, Hà Nội</p>
-        <p><strong>Tổng Biên tập: </strong>Lưu Quang Định</p>
-        <p><strong>Phó Tổng Biên tập phụ trách: </strong>Phan Huy Hà (Thường trực), Lưu Phan, Nguyễn Văn Hoài</p>
+        <p><strong>Tổng Biên tập: </strong>Nguyễn Văn Hoài</p>
+        <p><strong>Phó Tổng Biên tập phụ trách: </strong>Phan Huy Hà (Thường trực), Lưu Phan</p>
         <p><strong>Email: </strong>
           <a href="mailto:toasoanlangcuoi@gmail.com" rel="nofollow" title="liên hệ">toasoanlangcuoi@gmail.com</a>
         </p>
@@ -458,16 +464,14 @@
     </div>
     <!-- end mb -->
     <!-- back top -->
-    <div id="back-top"><i class="fas fa-arrow-up text-white"></i></div>
+    <div id="back-top">
+      <img src="./images/svg/arrow-up-w.svg" alt="" class="icon">
+    </div>
     <!-- end back top -->
   </footer>
   <!-- end footer -->
 
   <script src="./lib/swiper/swiper-bundle.min.js"></script>
-  <script src="./lib/font-awesome/fontawesome-free-5.15.4-web/js/fontawesome.min.js"></script>
-  <script src="./js/ResizeSensor.js"></script>
-  <script src="./js/theia-sticky-sidebar.js"></script>
-  <script src="./lib/fancybox/jquery.fancybox.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

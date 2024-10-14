@@ -78,6 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
         pagination: {
           el: ".swiper-pagination",
         },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
       });
     },
     // sticky bar home 1

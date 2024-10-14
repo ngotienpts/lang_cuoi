@@ -22,6 +22,11 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+
+  & .icon {
+    width: 16px;
+    height: auto;
+  }
 }
 .footer {
   & .infowrap {
@@ -55,11 +60,18 @@
     }
     & .f-social {
       display: flex;
+      height: 100%;
+      align-items: center;
 
       & a {
         padding: 0 11px;
         color: #999;
         font-size: 16px;
+      }
+
+      .icon {
+        height: 16px;
+        width: auto;
       }
     }
   }
